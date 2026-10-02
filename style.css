@@ -69,6 +69,7 @@ dialog {
     border-radius: 60px;
     corner-shape: squircle;
     animation: in 200ms ease-in-out;
+    padding: 30px;
 }
 
 dialog::backdrop {
