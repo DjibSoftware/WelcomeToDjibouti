@@ -72,6 +72,10 @@ dialog {
     padding: 30px;
 }
 
+dialog::-webkit-scrollbar {
+    display: none;
+}
+
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.301);
     backdrop-filter: blur(5px);
