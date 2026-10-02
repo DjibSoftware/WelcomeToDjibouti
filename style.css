@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-image: url(./data/Djibouti.jpg);
+    padding: 10%;
+    background-position: -580px -300px;
+    margin-top: -17px;
+    box-shadow: 0px 5px rgb(14, 115, 197);
+    transition: all 200ms;
+}
+
+.bg:hover {
+    box-shadow: 0px 5px 100px black;
+}
+
+.topBar {
+    padding: 10px;
+    background-color: rgb(53, 111, 177);
+    box-shadow: 0px 3px rgb(123, 123, 211);
+}
+
+p {
+    color: white;
+    transition: all 200ms;
+    animation: in 400ms ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topBar:hover {
+    background-color: rgb(45, 90, 143);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    box-shadow: 0px 1px 100px black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    corner-shape: squircle;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+@keyframes in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+dialog {
+    background-color: aliceblue;
+    box-shadow: 0px 1px 100px black;
+    border: none;
+    border-radius: 60px;
+    corner-shape: squircle;
+    animation: in 200ms ease-in-out;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(5px);
+}
+
+dialog:focus {
+    outline: none;
+}
+
+img {
+    animation: in 600ms ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0px 1px 100px black;
+    cursor: pointer;
+}
+
+.specialImage {
+    transition: all 200ms;
+}
+
+.specialImage:hover {
+    rotate: 2deg;
+}
